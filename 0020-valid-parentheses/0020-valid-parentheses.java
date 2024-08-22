@@ -16,7 +16,7 @@ class Solution {
                     stack.push(now);
                 }else if(stack.size()==0){
                     return false;
-                    // stack이 비워진 상태에서 pop을 하면 오류가 발생하므로 스택의 크기가 0이면 false 반환
+                    // 3. stack이 비워진 상태에서 pop을 하면 오류가 발생하므로 스택의 크기가 0이면 false 반환
                 }else if(now==')'){
                     if(stack.pop()!='('){
                         return false;
